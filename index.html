@@ -23,7 +23,7 @@
       <div class="eyebrow"><span class="dot"></span> TRUST &amp; TRANSPARENCY</div>
       <h1>Privacy <span>Policy</span></h1>
       <p class="lead">How Veyron handles your information when you use our Discord services and AI-powered support.</p>
-      <div class="meta"><span>POLICY VERSION 1.0</span><i></i><span>LAST UPDATED: 11 NOVEMBER 2026</span></div>
+      <div class="meta"><span>POLICY VERSION 1.1</span><i></i><span>LAST UPDATED: 11 NOVEMBER 2026</span></div>
     </section>
 
     <div class="notice">
@@ -64,21 +64,20 @@
             <div><span>Privacy contact</span><strong><a href="mailto:VeyronUserService@outlook.fr">VeyronUserService@outlook.fr</a></strong></div>
             <div><span>Service</span><strong>Veyron Discord bot</strong></div>
           </div>
-          <p><strong>Publication requirement:</strong> replace the full-name placeholder with the operator's real legal identity before publishing. A service name or pseudonym alone may not adequately identify the data controller under GDPR transparency requirements.</p>
+          <p>Veyron is operated independently by an individual. For privacy questions or requests, use the contact email above. The operator should ensure that the identity information published here is sufficient to meet the applicable legal transparency requirements.</p>
         </section>
 
         <section id="data">
           <div class="section-kicker">03 / DATA</div><h2>Information processed</h2>
           <h3>Discord account and interaction information</h3>
           <ul>
-            <li>Your Discord user ID, used to associate your privacy choice with your account.</li>
-            <li>Your Discord username or display name, where it is shown alongside your message in the server.</li>
+            <li>Your Discord user ID, used to associate your privacy choice with your Discord account.</li>
             <li>The messages and context you choose to submit to the AI support feature.</li>
           </ul>
           <h3>Consent records</h3>
-          <p>Veyron records your Discord user ID, consent status, the date and time of your decision, and the policy version associated with that decision. These records are used to check whether AI processing is permitted.</p>
+          <p>Veyron records your Discord user ID, your current consent status, the date and time of the recorded decision, and the policy version associated with it. These records are used to check whether AI processing is permitted. The current system keeps the latest consent state for each user; it is not a complete, immutable history of every past consent action.</p>
           <h3>Technical information</h3>
-          <p>Veyron may process limited technical information needed to operate the bot, diagnose errors, prevent abuse, and protect the service. The operator should document any additional logs actually enabled by the bot or its hosting provider.</p>
+          <p>Veyron may process limited technical information needed to operate the bot, diagnose errors, prevent abuse, and protect the service. The bot's own logging configuration has not yet been fully confirmed. If Veyron is hosted by KataBump, KataBump may separately process hosting-related information such as application logs, account and connection data, resource metrics, and technical data under its own privacy policy. This is separate from Veyron's consent database and from messages sent to Grok.</p>
         </section>
 
         <section id="purposes">
@@ -110,7 +109,7 @@
         <section id="visibility">
           <div class="section-kicker">06 / DISCORD VISIBILITY</div><h2>Messages may be visible in Discord</h2>
           <p>Veyron acts as a relay between your Discord interaction and the xAI API. Veyron does not intentionally keep a separate database or archive of the messages sent to Grok.</p>
-          <p>However, the bot displays the submitted message and/or the AI interaction in the relevant Discord server channel together with your Discord name. Members who have permission to view that channel may therefore see the content. The message may also remain available in Discord according to Discord's own systems, settings, and retention practices.</p>
+          <p>The bot displays the submitted message and/or the AI interaction in the relevant Discord server channel together with your Discord user ID. Members who have permission to view that channel may therefore see the content and the associated ID. The message may also remain available in Discord according to Discord's own systems, settings, and retention practices.</p>
           <p>Veyron cannot control screenshots, copies, or other records made by server members, nor Discord's independent processing of messages.</p>
           <p><strong>Please only submit information that you are comfortable sharing with the members who can access the channel.</strong></p>
         </section>
@@ -124,6 +123,9 @@
             <li><strong>Hosting providers:</strong> to run the bot and host this privacy website, where applicable.</li>
           </ul>
           <p>These providers may process data in countries outside the European Economic Area. The default xAI API endpoint does not, by itself, guarantee that processing takes place in a specific region. Where GDPR international-transfer rules apply, the operator must ensure an appropriate transfer mechanism and safeguards are in place before transferring personal data.</p>
+          <h3>Possible hosting provider: KataBump</h3>
+          <p>The bot may initially be hosted by KataBump, including on its free plan. If this hosting choice is confirmed, KataBump will act as a technical hosting provider and may process data needed to operate and secure the hosted application, including application logs and technical connection information. KataBump's published documentation states that its primary hosting infrastructure is in France, that technical logs may be retained for up to 12 months, and that deleted data may remain in backups for up to 90 days. Some limited technical data may also transit through global providers such as Cloudflare. These are KataBump's own processing and retention practices, not retention periods controlled by Veyron. The operator must review the applicable Data Processing Agreement and subprocessors before production use. If another host is selected, this section must be updated.</p>
+          <p>See <a href="https://legal.katabump.com/fr/confidentialite/" target="_blank" rel="noopener noreferrer">KataBump's privacy policy</a>, its <a href="https://legal.katabump.com/subprocessors/" target="_blank" rel="noopener noreferrer">subprocessor list</a>, and its <a href="https://legal.katabump.com/en/data-processing-agreement/" target="_blank" rel="noopener noreferrer">Data Processing Agreement</a>.</p>
           <p>For more information, consult the providers' own privacy and data-protection documentation: <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Discord Privacy Policy</a> and <a href="https://x.ai/legal/privacy-policy" target="_blank" rel="noopener noreferrer">xAI Privacy Policy</a>.</p>
         </section>
 
@@ -135,11 +137,13 @@
               <tr><td>AI prompts and responses in Veyron's own database</td><td>Not intentionally stored by Veyron.</td></tr>
               <tr><td>Messages displayed in Discord</td><td>Subject to Discord's systems, server settings, and applicable deletion actions.</td></tr>
               <tr><td>API prompts and responses held by xAI</td><td>30 days by default, subject to xAI's terms, settings, and exceptions.</td></tr>
-              <tr><td>Consent records</td><td>While consent is active; after withdrawal, only as long as necessary to demonstrate the choice and handle related claims. The operator must apply a defined deletion schedule.</td></tr>
-              <tr><td>Technical/security logs</td><td>[SET A REAL PERIOD AFTER CHECKING YOUR BOT HOST AND LOGGING SETTINGS.]</td></tr>
+              <tr><td>Consent records</td><td>While consent remains active. After withdrawal, the record is intended to be retained for up to 12 months to document the withdrawal and handle related privacy or legal claims, then deleted.</td></tr>
+              <tr><td>Veyron's own technical logs</td><td>No separate retention period is stated until the bot's logging configuration has been checked.</td></tr>
+              <tr><td>KataBump hosting logs (if used)</td><td>According to KataBump's published policy, up to 12 months. This period is set by the host, not Veyron.</td></tr>
+              <tr><td>KataBump backups (if used)</td><td>According to KataBump's published policy, up to 90 days after deletion from production systems.</td></tr>
             </tbody></table>
           </div>
-          <p><strong>Important:</strong> the consent database currently needs an automated retention/deletion rule if Veyron is to enforce a fixed period after withdrawal. Do not claim that records are automatically deleted until that mechanism is implemented and tested.</p>
+          <p><strong>Important:</strong> the 12-month period is the intended policy, not an automatic feature already guaranteed by the current bot code. An automated cleanup process must be implemented and tested before Veyron can claim that withdrawn records are actually deleted on schedule. Consent records are kept for accountability, not as a general backup or for user profiling/statistics.</p>
         </section>
 
         <section id="consent">
@@ -184,7 +188,7 @@
           <p>For privacy questions, access requests, deletion requests, or other concerns, contact:</p>
           <div class="contact-card"><span>VEYRON · PRIVACY SUPPORT</span><a href="mailto:VeyronUserService@outlook.fr">VeyronUserService@outlook.fr</a></div>
         </section>
-        <footer class="policy-footer">© 2026 Veyron · Privacy Policy v1.0</footer>
+        <footer class="policy-footer">© 2026 Veyron · Privacy Policy v1.1</footer>
       </article>
     </div>
   </main>
